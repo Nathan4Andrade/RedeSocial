@@ -6,14 +6,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  titulo = 'Livros';
-
-  livros = ['O universo numa...', '2001 uma odisséia', 'Guia do mochileiro'];
-
-  novoLivro = 'Digite aqui...';
-
-  inserirLivro() {
-    this.livros.push(this.novoLivro);
-    this.novoLivro = 'Digite aqui...';
-  }
+  title = 'app';
 }

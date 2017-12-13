@@ -7,7 +7,8 @@ import {MatInputModule, MatButtonModule, MatCheckboxModule, MatCardModule} from 
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModuleModule} from './app-routing.module';
 import {UsuarioModule} from './usuario/usuario.module';
-import {MensagemModule} from "./mensagem/mensagem.module";
+import {MensagemModule} from './mensagem/mensagem.module';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import {MensagemModule} from "./mensagem/mensagem.module";
     BrowserModule, FormsModule,
     MatInputModule, MatButtonModule, MatCheckboxModule, MatCardModule,
     UsuarioModule,
+    MensagemModule,
     AppRoutingModuleModule,
+    RouterModule,
     HttpClientModule
   ],
   providers: [],

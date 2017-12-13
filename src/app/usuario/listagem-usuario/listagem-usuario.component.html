@@ -7,7 +7,7 @@
 <button mat-mini-fab [routerLink]="'/usuario/cadastro'"
         matTooltip="Cadastrar usuário"
         matTooltipPosition="below" color="primary">
-  <!--Para outros ícones, procure em: https://material.io/icons/ -->
+
   <i class="material-icons">add</i>
 </button>
 <br><br>
@@ -15,13 +15,11 @@
 <div class="example-container mat-elevation-z8">
   <mat-table #table [dataSource]="dataSource">
 
-    <!-- Coluna Login -->
     <ng-container matColumnDef="login">
       <mat-header-cell *matHeaderCellDef>Login</mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.login}} </mat-cell>
     </ng-container>
 
-    <!-- Coluna Nome -->
     <ng-container matColumnDef="nome">
       <mat-header-cell *matHeaderCellDef>Nome</mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.nome}} </mat-cell>
