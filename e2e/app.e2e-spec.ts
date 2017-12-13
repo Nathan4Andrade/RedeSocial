@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('nova-app App', () => {
+describe('app-social App', () => {
   let page: AppPage;
 
   beforeEach(() => {
