@@ -1,0 +1,25 @@
+<h2>
+  <div class="div-titulo">
+    <label value="Título">Enviar Mensagem</label>
+  </div>
+</h2>
+<div>
+  <mat-card>
+    <mat-card-content>
+      <mat-input-container>
+        <input matInput [(ngModel)]="mensagem.nome" name="nome" autocomplete="off" placeholder="Nome do Usuário"/>
+        <input matInput [(ngModel)]="mensagem.conteudo" name="conteudo" autocomplete="off" placeholder="Conteúdo"/>
+        <input matInput [(ngModel)]="mensagem.localizacao" name="localizacao" autocomplete="off" placeholder="Localização"/>
+      </mat-input-container>
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div>
+
+  <button mat-raised-button color="primary" (click)="enviarMensagem()">
+    Salvar
+  </button>
+
+</div>

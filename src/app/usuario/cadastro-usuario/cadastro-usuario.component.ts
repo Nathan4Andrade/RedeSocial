@@ -19,7 +19,7 @@ export class CadastroUsuarioComponent implements OnInit {
 
   cadastrarUsuario() {
     this.usuarioService.cadastrarUsuario(this.usuario);
-    this.usuario = new Usuario()
+    this.usuario = new Usuario();
   }
 
 }

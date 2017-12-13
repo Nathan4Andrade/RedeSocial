@@ -2,6 +2,8 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AppComponent} from './app.component';
 import {CadastroUsuarioComponent} from './usuario/cadastro-usuario/cadastro-usuario.component';
+import {ListagemUsuarioComponent} from './usuario/listagem-usuario/listagem-usuario.component';
+import {CadastroMensagemComponent} from './mensagem/cadastro-mensagem/cadastro-mensagem.component';
 
 const routes: Routes = [
   {
@@ -12,14 +14,24 @@ const routes: Routes = [
         path: 'usuario/cadastro',
         component: CadastroUsuarioComponent
       },
+      {
+        path: 'usuario/listagem',
+        component: ListagemUsuarioComponent
+      },
+      {
+        path: 'mensagem/cadastro',
+        component: CadastroMensagemComponent
+      },
     ],
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
+  exports: [RouterModule],
+  declarations: []
 })
-
-export class AppRoutingModule {
+export class AppRoutingModuleModule {
 }
