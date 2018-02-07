@@ -1,5 +1,6 @@
-<router-outlet></router-outlet>
-<p>
-  app works!
-</p>
-
+<hello name="{{ name }}"></hello>
+  <ul>
+    <li *ngFor="let usuario of usuarios">
+      {{usuario.nome}} - <button (click)="remover(usuario)">X</button>
+    </li>
+  </ul>
